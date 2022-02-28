@@ -1,0 +1,10 @@
+//style[contains(text(),'type="submit"')]//following-sibling::center//input[contains(@value,"Lucky")]
+
+//style[contains(text(),'type="submit"')]//..//input[@name="btnI"]
+
+(//input[contains(@value,"Lucky")]/../..)[not(style)]
+
+(//input[contains(@value,"Lucky")]/../..)[not(style)]//input[@name="btnI"]
+
+(//input[contains(@value,"Lucky")]/..)[not(preceding-sibling::style)]//input[@name='btnI']
+
